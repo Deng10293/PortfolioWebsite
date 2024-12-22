@@ -3,13 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="author" content="Your Name">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Optional) -->
+    <header id="hero">
         <h1>Welcome to My Portfolio</h1>
+        <p>I’m [Your Name], a passionate developer.</p>
+        <a href="#projects" class="btn">View My Work</a>
     </header>
-    <script src="scripts/script.js"></script>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m [Your Name], a [Your Role, e.g., Frontend Developer] passionate about building elegant and efficient web solutions.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="images/project1.png" alt="Project 1 Screenshot">
+            <h3>Project Name</h3>
+            <p>A brief description of the project. Mention what it does and why it’s awesome.</p>
+            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://github.com/username/project-repo" target="_blank">View on GitHub</a>
+            <a href="https://live-demo-link.com" target="_blank">Live Demo</a>
+        </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS (Flexbox, Grid, Animations)</li>
+            <li>JavaScript (ES6+, React, Angular)</li>
+            <li>Version Control (Git, GitHub)</li>
+            <li>Backend (Node.js, Express, ASP.NET Core)</li>
+            <li>Database (PostgreSQL, MongoDB)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just to say hi!</p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>
+            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+        </p>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer (Optional) -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
